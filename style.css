@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    height: 640px;
+    box-shadow: 0 1px 12px 10px #cccccc;
+    border-radius: 20px;
+}
+
+
