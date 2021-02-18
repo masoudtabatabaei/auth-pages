@@ -2,8 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
+button , button:active , button:focus {
+    border: none;
+    outline: none;
+}
 
 body {
     display: flex;
@@ -12,12 +17,100 @@ body {
     height: 100vh;
 }
 
-.container {
-    width: 100%;
-    max-width: 320px;
-    height: 640px;
-    box-shadow: 0 1px 12px 10px #cccccc;
-    border-radius: 20px;
+.bg-circle {
+    position: absolute;
+    top: -40%;
+    left: 60%;
+    transform: translateX(-60%);
+    background-color: #ecf0f3;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
 }
 
+.sign-in {
+    z-index: 2;
+    width: 320px;
+    height: 640px;
+    box-shadow: 0 1px 12px 10px #eeeeee;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fefefe;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, #0000, #0009), url("img/bg.jpeg") no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    height: 62%;
+    border-radius: 0 0 50% 50% / 0 0 30% 30%;
+}
+
+.main-container .title {
+    text-align: center;
+    color: #ffffff;
+    z-index: 3;
+    padding: 0 20px;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #f8f8f8;
+}
+
+.title p {
+    font-size: 1rem;
+    color: rgba(217,217,217,1);
+}
+
+.main-buttons {
+    display: none;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-buttons button {
+    border-radius: 25px;
+    background-color: white;
+    color: #333333;
+    text-transform: uppercase;
+    display: block;
+    width: 220px;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.main-buttons button:active {
+    transform: scale(1.09);
+}
+
+.main-buttons .facebook-btn {
+    background-color: #3b5998;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.main-buttons .new-account {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    display: block;
+}
 
