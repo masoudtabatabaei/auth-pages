@@ -30,11 +30,11 @@ body {
     z-index: -1;
 }
 
-.sign-in {
+.container {
     z-index: 2;
     width: 320px;
     height: 640px;
-    box-shadow: 0 1px 12px 10px #eeeeee;
+    box-shadow: 2px 8px 20px 10px #c9c4c4;
     border-radius: 20px;
     overflow: hidden;
     background-color: #fefefe;
@@ -47,13 +47,9 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse, #0000, #0009), url("img/bg.jpeg") no-repeat;
+    background: radial-gradient(ellipse, #0000, #0006), url("img/bg.jpeg") no-repeat;
     background-size: cover;
-}
-
-.main-container {
-    height: 62%;
-    border-radius: 0 0 50% 50% / 0 0 30% 30%;
+    transition: all ease-in-out 0.45s;
 }
 
 .main-container .title {
@@ -68,19 +64,33 @@ body {
     font-size: 1.8rem;
     letter-spacing: 1px;
     color: #f8f8f8;
+    text-shadow: 0 1px 5px #444;
 }
 
 .title p {
     font-size: 1rem;
     color: rgba(217,217,217,1);
+    text-shadow: 0 1px 10px #222222;
 }
 
 .main-buttons {
-    display: none;
     position: absolute;
     bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.main-container.show-form {
+    height: 62%;
+    border-radius: 0 0 50% 50% / 0 0 30% 30%;
+}
+
+.main-container.show-form .main-buttons {
+    display: none;
+}
+
+.main-container.show-form .cancel {
+    display: block;
 }
 
 .main-buttons button {
@@ -94,6 +104,7 @@ body {
     margin-bottom: 10px;
     transition: all 0.1s;
     cursor: pointer;
+    border: none;
 }
 
 .main-buttons button:active {
@@ -106,7 +117,7 @@ body {
     margin-bottom: 40px;
 }
 
-.main-buttons .new-account {
+.main-buttons .create-new-account {
     text-decoration: underline;
     text-transform: capitalize;
     text-align: center;
