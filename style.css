@@ -38,6 +38,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     background-color: #fefefe;
+    position: relative;
 }
 
 .main-container {
@@ -167,7 +168,7 @@ form input:focus {
     box-shadow: 2px 2px 6px 1px #dddddd;
 }
 
-form button {
+form .cta {
     cursor: pointer;
     background-color: #ffffff;
     transition: all ease 0.2s;
@@ -176,11 +177,21 @@ form button {
     margin-top: 12px;
 }
 
-form button:hover {
+form .cta:hover {
     background-color: #43a43f;
     color: white;
 }
 
 .login-form  , .register-form , .cancel {
     display: none;
+    transition: all ease 0.5s;
+}
+
+.text-after-action {
+    display: none;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 20%;
 }
