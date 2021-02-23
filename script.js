@@ -12,13 +12,15 @@ $(document).ready(function () {
         e.preventDefault();
 
         $(".main-container").removeClass("show-form");
-        $(".form").hide();
+        $(".form").removeClass("hide").hide();
+        $(".text-after-action").fadeOut("fast");
     });
 
 
     $(".cta").on("click" , function (e) {
         e.preventDefault();
-        $(".form").css("margin-top" , "-260px");
-        $(".text-after-action").append("<p>Created By Masoud</p>").fadeIn("slow");
+        $(".form").addClass("hide")
+        $(".text-after-action").fadeIn("slow");
+        $(".text-after-action").fadeIn("slow");
     });
 });
