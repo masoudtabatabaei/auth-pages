@@ -7,7 +7,6 @@
 
 button , button:active , button:focus  ,
 input , input:focus , input:active {
-    //border: none;
     outline: none;
 }
 
@@ -39,9 +38,6 @@ body {
     overflow: hidden;
     background-color: #fefefe;
     position: relative;
-    /*background-color: black;*/
-    /*background: url("img/1.jpg") no-repeat;*/
-    /*background-size: cover;*/
 }
 
 .main-container {
